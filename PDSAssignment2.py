@@ -7,11 +7,11 @@ import networkx as nx
 
 # importing data frames and merging them together
 
-filename = "/Users/Lana/Desktop/Buslah/bus_stops.csv"
+filename = "../bus_stops.csv"
 bus_stops = pd.read_csv(filename)
-filename = "/Users/Lana/Desktop/Buslah/bus_routes.csv"
+filename = "../bus_routes.csv"
 bus_routes = pd.read_csv(filename)
-filename = "/Users/Lana/Desktop/Buslah/bus_services.csv"
+filename = "../bus_services.csv"
 bus_services = pd.read_csv(filename)
 route_service = pd.merge(bus_routes, bus_services,
                          left_on=["ServiceNo", "Operator", "Direction"],
